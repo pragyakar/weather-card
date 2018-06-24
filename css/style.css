@@ -19,11 +19,11 @@ body, html {
 .box {
     height: 390px;
     width: 330px;
-    /* background-color: #3773d3; */
     background: linear-gradient(to bottom right, #45BDD9, #2d77d4);
     border-radius: 10px;
     box-shadow: 5px 5px 30px rgba(0,0,0,0.3);
     padding-top: 20px;
+    -webkit-animation-duration: 1.75s;
 }
 @media (max-width:480px) {
     .box {
@@ -36,11 +36,11 @@ body, html {
         justify-content: center;
         align-items: center;
         text-align: center;
-        
     }
 }
 .climate-icon {
-    min-height: 200px;
+    min-height: 250px;
+    -webkit-animation-delay: 2s;
 }
 .icon {
     color: rgb(255, 255, 255);
@@ -53,6 +53,9 @@ body, html {
     font-size: 25px;
     color: #fff;
     letter-spacing: 2px;
+}
+.temperature-box, .location {
+    -webkit-animation-delay: 3s;
 }
 .location {
     text-transform: uppercase;

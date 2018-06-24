@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Current Weather</title>
+    <link rel="stylesheet" href="css/animate.css"> 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="landing">
-        <div class="box">
-            <div class="climate-icon"></div>
-            <p class="temperature-box">
+        <div class="box animated zoomIn">
+            <div class="climate-icon animated slideInDown" id="climate-icon"></div>
+            <p class="temperature-box animated fadeIn">
                 <span class="temp temp-cel"></span>
                 &nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;
                 <span class="temp temp-far"></span>
             </p>
-            <p class="location"></p>
+            <p class="location animated fadeIn" ></p>
             <!-- <span class="wind"></span>
             <span class="humidity"></span> -->
         </div>
