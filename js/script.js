@@ -19,14 +19,20 @@ function loadWeather(location, woeid) {
             city = weather.city;
             country = weather.country;
             celciusTemp = weather.temp+'&deg;C';
+            farenheitTemp = 
             wcode = '<img src="../icons/'+weather.code+'.svg" class="icon">';  
             wind = weather.wind.speed + ' ' + weather.units.speed;
             humidity = weather.humidity+ '%';
-
+            
             $('.climate-icon').html(wcode);
             $('.temp-cel').html(celciusTemp);
             $('.location').html(city+', '+country);
+            $('.wind').html(wind);
+            
 
         }
     })
+}
+function getFarenTemp(celciusTemp){
+
 }
