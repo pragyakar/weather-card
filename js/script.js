@@ -6,10 +6,6 @@ if('geolocation' in navigator){
     loadWeather('Kathmandu, NP', '');
 }
 
-$(document).ready(function(){
-    setInterval(loadWeather, 10000);
-})
-
 function loadWeather(location, woeid) {
     $.simpleWeather({
         location: location,
@@ -18,21 +14,19 @@ function loadWeather(location, woeid) {
         success: function(weather){
             city = weather.city;
             country = weather.country;
-            celciusTemp = weather.temp+'&deg;C';
-            farenheitTemp = 
+            celciusTemp = weather.temp;
+            fahrenheitTemp =  Math.round((celciusTemp * 1.8) + 32);
             wcode = '<img src="../icons/'+weather.code+'.svg" class="icon">';  
             wind = weather.wind.speed + ' ' + weather.units.speed;
             humidity = weather.humidity+ '%';
             
             $('.climate-icon').html(wcode);
-            $('.temp-cel').html(celciusTemp);
+            $('.temp-cel').html(celciusTemp+'&deg;C');
+            $('.temp-far').html(fahrenheitTemp+'&deg;F');
             $('.location').html(city+', '+country);
-            $('.wind').html(wind);
-            
-
+        },
+        error: function(){
+            $('.error').text("Could not fetch weather data.");
         }
     })
-}
-function getFarenTemp(celciusTemp){
-
 }
