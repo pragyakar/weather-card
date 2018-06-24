@@ -1,6 +1,10 @@
+* {
+    transition: 0.4s ease;
+}
 body, html {
     margin: 0 auto;
     font-family: 'Open Sans';
+    
 }
 .landing {
     background-color: #ffffff;
@@ -15,10 +19,25 @@ body, html {
 .box {
     height: 390px;
     width: 330px;
-    background-color: #3773d3;
+    /* background-color: #3773d3; */
+    background: linear-gradient(to bottom right, #45BDD9, #2d77d4);
     border-radius: 10px;
     box-shadow: 5px 5px 30px rgba(0,0,0,0.3);
-    padding: 20px;
+    padding-top: 20px;
+}
+@media (max-width:480px) {
+    .box {
+        height: 100%;
+        width:100%;
+        padding: 0;
+        border-radius: 0; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
 }
 .climate-icon {
     min-height: 200px;
@@ -26,7 +45,7 @@ body, html {
 .icon {
     color: rgb(255, 255, 255);
     height: 200px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .temperature-box {
     text-transform: uppercase;
