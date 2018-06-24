@@ -1,0 +1,31 @@
+body, html {
+    margin: 0 auto;
+    font-family: 'Open Sans';
+}
+.landing {
+    background-color: #ffffff;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.box {
+    min-height: 250px;
+    width: 400px;
+    background-color: #3773d3;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.3);
+}
+.icon {
+    
+}
+.location {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 2px;
+}
