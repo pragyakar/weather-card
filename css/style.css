@@ -4,7 +4,10 @@
 body, html {
     margin: 0 auto;
     font-family: 'Open Sans';
-    
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 2px;
 }
 .landing {
     background-color: #ffffff;
@@ -17,8 +20,8 @@ body, html {
     text-align: center;
 }
 .box {
-    height: 390px;
-    width: 330px;
+    height: 420px;
+    width: 350px;
     background: linear-gradient(to bottom right, #45BDD9, #2d77d4);
     border-radius: 10px;
     box-shadow: 5px 5px 30px rgba(0,0,0,0.3);
@@ -43,27 +46,16 @@ body, html {
     -webkit-animation-delay: 2s;
 }
 .icon {
-    color: rgb(255, 255, 255);
     height: 200px;
     margin-top: 40px;
 }
 .temperature-box {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 25px;
-    color: #fff;
-    letter-spacing: 2px;
+    font-size: 30px;
 }
 .temperature-box, .location {
     -webkit-animation-delay: 3s;
 }
 .location {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 22px;
-    color: #fff;
-    letter-spacing: 2px;
-}
-.error {
-    font-size: 17px;
+    font-size: 23px;
+    color: #fff;   
 }
