@@ -20,7 +20,16 @@ body, html {
     box-shadow: 5px 5px 30px rgba(0,0,0,0.3);
 }
 .icon {
-    
+    color: rgb(255, 255, 255);
+    height: 200px;
+    margin-top: 50px;
+}
+.temperature-box {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 2px;
 }
 .location {
     text-transform: uppercase;
