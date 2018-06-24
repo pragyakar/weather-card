@@ -13,8 +13,8 @@ body, html {
     text-align: center;
 }
 .box {
-    height: 380px;
-    width: 320px;
+    height: 390px;
+    width: 330px;
     background-color: #3773d3;
     border-radius: 10px;
     box-shadow: 5px 5px 30px rgba(0,0,0,0.3);
@@ -38,10 +38,10 @@ body, html {
 .location {
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 22px;
     color: #fff;
     letter-spacing: 2px;
 }
 .error {
-    font-size: 12px;
+    font-size: 17px;
 }
