@@ -20,8 +20,8 @@ body, html {
     text-align: center;
 }
 .box {
-    height: 420px;
-    width: 350px;
+    height: 410px;
+    width: 380px;
     background: linear-gradient(to bottom right, #45BDD9, #2d77d4);
     border-radius: 10px;
     box-shadow: 5px 5px 30px rgba(0,0,0,0.3);
@@ -41,18 +41,32 @@ body, html {
         text-align: center;
     }
 }
+.week {
+    margin-top: 10px;
+}
+.day {
+    font-size: 12px;
+    margin: 4px;
+    font-weight: 400;
+}
+.day-active {
+    background: linear-gradient(to top left, #45BDD9, #2d77d4);
+    padding: 4px 9px;
+    border-radius: 50px;
+}
 .climate-icon {
-    min-height: 250px;
+    min-height: 200px;
     -webkit-animation-delay: 2s;
 }
 .icon {
     height: 200px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .temperature-box {
     font-size: 30px;
+    margin-bottom: -10px;
 }
-.temperature-box, .location {
+.temperature-box, .location, .week {
     -webkit-animation-delay: 3s;
 }
 .location {
