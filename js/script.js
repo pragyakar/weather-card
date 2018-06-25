@@ -1,3 +1,5 @@
+setActiveWeek();
+
 if('geolocation' in navigator){
     navigator.geolocation.getCurrentPosition(function(position){
         loadWeather(position.coords.latitude + ',' + position.coords.longitude);
@@ -29,4 +31,24 @@ function loadWeather(location, woeid) {
             $('.error').text("Could not fetch weather data.");
         }
     })
+}
+
+function setActiveWeek(){
+    var currentDate = new Date();
+    var currentDayNumber = currentDate.getDay();
+    if(currentDayNumber == 0){
+        $('.day-sunday').addClass('day-active');
+    } else if (currentDayNumber == 1){
+        $('.day-monday').addClass('day-active');
+    } else if (currentDayNumber == 2){
+        $('.day-tuesday').addClass('day-active');
+    } else if (currentDayNumber == 3){
+        $('.day-wednesday').addClass('day-active');
+    } else if (currentDayNumber == 4){
+        $('.day-thursday').addClass('day-active');
+    } else if (currentDayNumber == 5){
+        $('.day-friday').addClass('day-active');
+    } else if (currentDayNumber == 6){
+        $('.day-saturday').addClass('day-active');
+    }
 }
