@@ -22,11 +22,16 @@ body, html {
 .box {
     height: 440px;
     width: 390px;
-    background: linear-gradient(to bottom right, #45BDD9, #2d77d4);
     border-radius: 10px;
     box-shadow: 5px 5px 30px rgba(0,0,0,0.3);
     padding-top: 30px;
     -webkit-animation-duration: 1.75s;
+}
+.box-day {
+    background: linear-gradient(to bottom right, rgb(69, 189, 217), rgb(46, 121, 214)); 
+}
+.box-night {
+    background: linear-gradient(to bottom right, rgb(109, 19, 131), rgb(79, 39, 173) );
 }
 @media (max-width:480px) {
     .box {
@@ -50,7 +55,7 @@ body, html {
     font-weight: 400;
 }
 .day-active {
-    background: linear-gradient(to top left, #1774e6, #4d95ec);
+    background: linear-gradient(to top left, rgb(26, 123, 241), rgba(77, 149, 236,1));
     padding: 5px 10px;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
     border-radius: 50px;
@@ -72,6 +77,6 @@ body, html {
     -webkit-animation-delay: 3s;
 }
 .location {
-    font-size: 23px;
+    font-size: 24px;
     color: #fff;   
 }

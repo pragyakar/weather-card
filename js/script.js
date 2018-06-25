@@ -36,6 +36,12 @@ function loadWeather(location, woeid) {
 function setActiveWeek(){
     var currentDate = new Date();
     var currentDayNumber = currentDate.getDay();
+    var currentHour = currentDate.getHours();
+    if (currentHour > 6 && currentHour < 20){
+        $('.box').addClass('box-day');
+    } else {
+        $('.box').addClass('box-night');
+    }
     if(currentDayNumber == 0){
         $('.day-sunday').addClass('day-active');
     } else if (currentDayNumber == 1){
