@@ -39,22 +39,38 @@ function setActiveWeek(){
     var currentHour = currentDate.getHours();
     if (currentHour > 6 && currentHour < 20){
         $('.box').addClass('box-day');
+        if(currentDayNumber == 0){
+            $('.day-sunday').addClass('active day-active');
+        } else if (currentDayNumber == 1){
+            $('.day-monday').addClass('active day-active');
+        } else if (currentDayNumber == 2){
+            $('.day-tuesday').addClass('active day-active');
+        } else if (currentDayNumber == 3){
+            $('.day-wednesday').addClass('active day-active');
+        } else if (currentDayNumber == 4){
+            $('.day-thursday').addClass('active day-active');
+        } else if (currentDayNumber == 5){
+            $('.day-friday').addClass('active day-active');
+        } else if (currentDayNumber == 6){
+            $('.day-saturday').addClass('active day-active');
+        }
     } else {
         $('.box').addClass('box-night');
+        if(currentDayNumber == 0){
+            $('.day-sunday').addClass('active night-active');
+        } else if (currentDayNumber == 1){
+            $('.day-monday').addClass('active night-active');
+        } else if (currentDayNumber == 2){
+            $('.day-tuesday').addClass('active night-active');
+        } else if (currentDayNumber == 3){
+            $('.day-wednesday').addClass('active night-active');
+        } else if (currentDayNumber == 4){
+            $('.day-thursday').addClass('active night-active');
+        } else if (currentDayNumber == 5){
+            $('.day-friday').addClass('active night-active');
+        } else if (currentDayNumber == 6){
+            $('.day-saturday').addClass('active night-active');
+        }
     }
-    if(currentDayNumber == 0){
-        $('.day-sunday').addClass('day-active');
-    } else if (currentDayNumber == 1){
-        $('.day-monday').addClass('day-active');
-    } else if (currentDayNumber == 2){
-        $('.day-tuesday').addClass('day-active');
-    } else if (currentDayNumber == 3){
-        $('.day-wednesday').addClass('day-active');
-    } else if (currentDayNumber == 4){
-        $('.day-thursday').addClass('day-active');
-    } else if (currentDayNumber == 5){
-        $('.day-friday').addClass('day-active');
-    } else if (currentDayNumber == 6){
-        $('.day-saturday').addClass('day-active');
-    }
+    
 }
