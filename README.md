@@ -1,1 +1,3 @@
-# just-weather-things
+weather-cards
+
+<p>View Current Weather status</p>
