@@ -11,7 +11,7 @@ body, html {
     letter-spacing: 2px;
 }
 .landing {
-    background-color: #ffffff;
+    
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -27,6 +27,7 @@ body, html {
     border-radius: 10px;
     box-shadow: 5px 5px 30px rgba(0,0,0,0.3);
     padding-top: 30px;
+    padding-bottom: 20px;
     -webkit-animation-duration: 1.75s;
 }
 .box-day {
@@ -49,7 +50,7 @@ body, html {
     }
 }
 .week {
-    margin-top: 5px;
+    margin-top: 15px;
 }
 .day {
     font-size: 12px;
